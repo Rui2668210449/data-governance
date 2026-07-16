@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>404 - Page Not Found</title>
+  <script>
+    const path = window.location.pathname;
+    const base = '/data-governance/';
+    const redirectPath = path.startsWith(base) ? path.substring(base.length) : path;
+    window.location.href = base + '#/' + redirectPath;
+  </script>
+</head>
+<body>
+</body>
+</html>
