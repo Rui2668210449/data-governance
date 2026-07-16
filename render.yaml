@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: data-governance-api
+    env: docker
+    region: singapore
+    plan: free
+    branch: main
+    healthCheckPath: /api/health
+    envVars:
+      - key: JAVA_OPTS
+        value: -Xmx512m

@@ -1,0 +1,99 @@
+:root {
+  --brand-color: #0052d9;
+  --brand-color-light: #266fe8;
+  --brand-color-lighter: #00a8e5;
+  --bg-page: #f5f7fa;
+  --bg-card: #ffffff;
+  --text-primary: #181818;
+  --text-secondary: #595959;
+  --border-color: #e7e7e7;
+  --success: #00a870;
+  --warning: #ed7b2f;
+  --danger: #e34d59;
+  --info: #0052d9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'PingFang SC', 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  color: var(--text-primary);
+  background-color: var(--bg-page);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5c7cb;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9a9da3;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.page-container {
+  padding: 16px;
+}
+
+.page-card {
+  background: var(--bg-card);
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.page-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  color: var(--text-primary);
+}
+
+.flex {
+  display: flex;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+.gap-8 {
+  gap: 8px;
+}
+.gap-12 {
+  gap: 12px;
+}
+.gap-16 {
+  gap: 16px;
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.route-fade-enter-active,
+.route-fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+.route-fade-enter-from,
+.route-fade-leave-to {
+  opacity: 0;
+}
